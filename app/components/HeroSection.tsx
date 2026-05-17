@@ -1,0 +1,149 @@
+'use client';
+
+import { useEffect } from 'react';
+
+export default function HeroSection() {
+  useEffect(() => {
+    const letters = document.querySelectorAll('.hero-letter');
+    letters.forEach((el, i) => {
+      (el as HTMLElement).style.animationDelay = `${i * 0.05}s`;
+    });
+  }, []);
+
+  return (
+    <section
+      className="relative flex flex-col mesh-bg"
+      style={{ paddingTop: '80px', overflow: 'visible' }}
+    >
+      {/* Grid decorativo */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: `linear-gradient(#D6A354 1px, transparent 1px), linear-gradient(90deg, #D6A354 1px, transparent 1px)`,
+        backgroundSize: '80px 80px',
+      }} />
+
+      {/* Glow central */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-10"
+        style={{ background: 'radial-gradient(circle, #D6A354, transparent 70%)' }} />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-0 w-full">
+
+        {/* Eyebrow */}
+        <div className="flex items-center gap-3 mb-6" data-aos="fade-down" data-aos-duration="600">
+          <div className="h-px w-8" style={{ background: '#D6A354' }} />
+          <span className="section-label">Método CEV — Cleane Fontenele</span>
+          <div className="h-px w-8" style={{ background: '#D6A354' }} />
+        </div>
+
+        {/* Headline menor */}
+        <div className="mb-6">
+          <h1 className="font-bebas leading-none" style={{ fontSize: 'clamp(2.8rem, 6vw, 5.5rem)' }}>
+            <span className="block text-white" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+              Você produz
+            </span>
+            <span className="block" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+              <span className="gold-gradient">conteúdo</span>
+              <span className="text-white"> todo dia</span>
+            </span>
+            <span className="block" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300"
+              style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)', color: 'transparent' }}>
+              e não vende nada.
+            </span>
+          </h1>
+        </div>
+
+        {/* Subheadline */}
+        <div className="max-w-2xl mb-8" data-aos="fade-up" data-aos-delay="400">
+          <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#B3B3B3' }}>
+            O problema não é a quantidade de conteúdo que você faz.
+            É que você nunca teve um método para transformar audiência em faturamento.
+            <span className="text-white font-semibold"> Isso muda agora.</span>
+          </p>
+        </div>
+
+        {/* Provas sociais */}
+        <div className="flex flex-wrap gap-6 mb-10" data-aos="fade-up" data-aos-delay="500">
+          {[
+            { num: '+697 mil', label: 'seguidores impactados' },
+            { num: '500M', label: 'visualizações' },
+            { num: 'Apresentadora', label: 'de TV & CEO de agência' },
+          ].map((item, i) => (
+            <div key={i} className="flex items-center gap-3">
+              <div className="text-sm font-bold" style={{ color: '#D6A354' }}>{item.num}</div>
+              <div className="h-4 w-px" style={{ background: '#1F1F1F' }} />
+              <div className="text-sm" style={{ color: '#777777' }}>{item.label}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div data-aos="fade-up" data-aos-delay="600" className="mb-14">
+          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-sm font-bold tracking-wide uppercase">
+            Quero o Método CEV agora
+          </button>
+          <p className="mt-4 text-sm" style={{ color: '#777777' }}>
+            ↓ A partir de 12x de R$ 16,42 — acesso imediato
+          </p>
+        </div>
+
+        {/* Print da plataforma sangrando para a próxima seção */}
+        <div
+          data-aos="fade-up"
+          data-aos-delay="750"
+          data-aos-duration="900"
+          className="relative"
+          style={{ marginBottom: '-180px' }}
+        >
+          {/* Barra estilo browser */}
+          <div
+            className="flex items-center gap-2 px-4 py-3 rounded-t-xl"
+            style={{
+              background: '#161616',
+              border: '1px solid #2A2A2A',
+              borderBottom: 'none',
+            }}
+          >
+            <span className="w-3 h-3 rounded-full" style={{ background: '#FF5F57' }} />
+            <span className="w-3 h-3 rounded-full" style={{ background: '#FFBD2E' }} />
+            <span className="w-3 h-3 rounded-full" style={{ background: '#28C840' }} />
+            <div className="ml-3 flex-1 h-5 rounded-sm" style={{ background: '#1F1F1F', maxWidth: '300px' }} />
+          </div>
+
+          {/* Imagem */}
+          <div
+            className="relative overflow-hidden rounded-b-xl"
+            style={{
+              border: '1px solid #2A2A2A',
+              borderTop: 'none',
+              boxShadow: '0 40px 100px rgba(0,0,0,0.7), 0 0 60px rgba(214,163,84,0.07)',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/plataforma1.png"
+              alt="Plataforma CEV"
+              className="w-full h-auto block"
+            />
+            {/* Fade inferior para a cor da próxima seção */}
+            <div
+              className="absolute bottom-0 left-0 right-0"
+              style={{
+                height: '220px',
+                background: 'linear-gradient(to bottom, transparent, #0B0B0D)',
+                pointerEvents: 'none',
+              }}
+            />
+          </div>
+
+          {/* Brilho dourado sutil nas bordas */}
+          <div
+            className="absolute inset-0 rounded-xl pointer-events-none"
+            style={{
+              boxShadow: 'inset 0 0 0 1px rgba(214,163,84,0.08)',
+            }}
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+}
