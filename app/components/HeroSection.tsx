@@ -34,7 +34,7 @@ export default function HeroSection() {
           <div className="h-px w-8" style={{ background: '#D6A354' }} />
         </div>
 
-        {/* Headline menor */}
+        {/* Headline */}
         <div className="mb-6">
           <h1 className="font-bebas leading-none" style={{ fontSize: 'clamp(2.8rem, 6vw, 5.5rem)' }}>
             <span className="block text-white" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
@@ -69,29 +69,18 @@ export default function HeroSection() {
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-3">
               <div className="text-sm font-bold" style={{ color: '#D6A354' }}>{item.num}</div>
-              <div className="h-4 w-px" style={{ background: '#1F1F1F' }} />
+              <div className="h-4 w-px" style={{ background: '#2A2A2A' }} />
               <div className="text-sm" style={{ color: '#777777' }}>{item.label}</div>
             </div>
           ))}
         </div>
 
-        {/* CTA */}
-        <div data-aos="fade-up" data-aos-delay="600" className="mb-14">
-          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-sm font-bold tracking-wide uppercase">
-            Quero o Método CEV agora
-          </button>
-          <p className="mt-4 text-sm" style={{ color: '#777777' }}>
-            ↓ A partir de 12x de R$ 16,42 — acesso imediato
-          </p>
-        </div>
-
-        {/* Print da plataforma sangrando para a próxima seção */}
+        {/* Print da plataforma — ACIMA do CTA */}
         <div
           data-aos="fade-up"
-          data-aos-delay="750"
+          data-aos-delay="600"
           data-aos-duration="900"
-          className="relative"
-          style={{ marginBottom: '-180px' }}
+          className="relative mb-12"
         >
           {/* Barra estilo browser */}
           <div
@@ -123,15 +112,6 @@ export default function HeroSection() {
               alt="Plataforma CEV"
               className="w-full h-auto block"
             />
-            {/* Fade inferior para a cor da próxima seção */}
-            <div
-              className="absolute bottom-0 left-0 right-0"
-              style={{
-                height: '220px',
-                background: 'linear-gradient(to bottom, transparent, #0B0B0D)',
-                pointerEvents: 'none',
-              }}
-            />
           </div>
 
           {/* Brilho dourado sutil nas bordas */}
@@ -141,6 +121,24 @@ export default function HeroSection() {
               boxShadow: 'inset 0 0 0 1px rgba(214,163,84,0.08)',
             }}
           />
+        </div>
+
+        {/* Aprenda com quem vive o mercado */}
+        <div className="max-w-2xl mb-10" data-aos="fade-up" data-aos-delay="700">
+          <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#B3B3B3' }}>
+            Aprenda com quem vive o mercado de comunicação a mais de 17 anos{' '}
+            <span className="text-white font-semibold">NA PRÁTICA</span>, e não na teoria.
+          </p>
+        </div>
+
+        {/* CTA — abaixo do print */}
+        <div data-aos="fade-up" data-aos-delay="800" className="mb-24">
+          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-sm font-bold tracking-wide uppercase">
+            Quero o Método CEV agora
+          </button>
+          <p className="mt-4 text-sm" style={{ color: '#777777' }}>
+            ↓ A partir de 12x de R$ 16,42 — acesso imediato
+          </p>
         </div>
 
       </div>

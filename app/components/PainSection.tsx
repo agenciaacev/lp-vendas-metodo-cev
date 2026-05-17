@@ -10,7 +10,7 @@ const pains = [
 
 export default function PainSection() {
   return (
-    <section className="relative overflow-hidden" style={{ background: '#0B0B0D', paddingTop: '320px', paddingBottom: '7rem' }}>
+    <section className="relative overflow-hidden" style={{ background: '#0B0B0D', paddingTop: '7rem', paddingBottom: '7rem' }}>
       <div className="absolute inset-0 opacity-5" style={{
         backgroundImage: 'radial-gradient(circle at 1px 1px, #D6A354 1px, transparent 0)',
         backgroundSize: '40px 40px',
