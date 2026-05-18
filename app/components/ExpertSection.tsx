@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const stats = [
   { num: '697K', label: 'seguidores no Instagram' },
   { num: '500M+', label: 'views no TikTok' },
@@ -19,12 +21,15 @@ export default function ExpertSection() {
           <div data-aos="fade-right" data-aos-duration="800" className="relative">
             <div className="relative aspect-[3/4] max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden"
               style={{ border: '1px solid #1F1F1F' }}>
-              <div className="w-full h-full flex flex-col items-center justify-center relative"
-                style={{ background: 'linear-gradient(135deg, #111111, #0B0B0D)' }}>
-                <div className="w-32 h-32 rounded-full mb-4"
-                  style={{ background: 'linear-gradient(135deg, #9A6A2F, #D6A354)', opacity: 0.3 }} />
-                <div className="font-bebas text-4xl" style={{ color: 'rgba(214,163,84,0.4)' }}>CLEANE FONTENELE</div>
-                <div className="text-sm mt-2" style={{ color: '#777777' }}>Foto da especialista</div>
+              <div className="relative w-full h-full" style={{ background: 'linear-gradient(135deg, #111111, #0B0B0D)' }}>
+                <Image
+                  src="/identidade.png"
+                  alt="Imagem de identidade"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
               </div>
               <div className="absolute top-4 right-4 w-16 h-16 border-t border-r" style={{ borderColor: '#D6A354' }} />
               <div className="absolute bottom-4 left-4 w-16 h-16 border-b border-l" style={{ borderColor: '#D6A354' }} />
