@@ -1,5 +1,3 @@
-'use client';
-
 export default function AnnouncementBar() {
   return (
     <div
@@ -10,12 +8,6 @@ export default function AnnouncementBar() {
       }}
       className="w-full py-2.5 text-center relative overflow-hidden"
     >
-      <style>{`
-        @keyframes shimmer {
-          0% { background-position: 200% 0; }
-          100% { background-position: -200% 0; }
-        }
-      `}</style>
       <p className="text-xs sm:text-sm font-semibold text-black tracking-wide px-4">
         ⚡ Vagas abertas — A inteligência artificial já está vendendo para seus concorrentes. E para você?
       </p>

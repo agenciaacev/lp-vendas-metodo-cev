@@ -1,5 +1,3 @@
-'use client';
-
 const bonuses = [
   { title: 'Calendário Editorial 90 dias', value: 'R$ 97', desc: 'Template pronto para planejar seu conteúdo com intenção estratégica por 3 meses.' },
   { title: 'Scripts de Stories que Vendem', value: 'R$ 67', desc: '30 roteiros prontos para transformar seus Stories em uma sequência de conversão.' },
@@ -30,7 +28,6 @@ export default function BonusSection() {
           </p>
         </div>
 
-        {/* Valor total */}
         <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="150">
           <div className="inline-flex items-center gap-4 px-8 py-4 rounded-sm"
             style={{ background: 'rgba(214,163,84,0.05)', border: '1px solid rgba(214,163,84,0.2)' }}>

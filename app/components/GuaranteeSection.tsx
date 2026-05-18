@@ -1,5 +1,3 @@
-'use client';
-
 export default function GuaranteeSection() {
   return (
     <section className="relative py-28 overflow-hidden" style={{ background: '#050505' }}>

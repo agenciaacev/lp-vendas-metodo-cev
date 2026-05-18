@@ -1,12 +1,9 @@
-'use client';
-
 export default function FinalCTASection() {
   return (
     <section className="relative py-32 overflow-hidden mesh-bg">
       <div className="absolute inset-0"
         style={{ background: 'radial-gradient(ellipse at center, rgba(214,163,84,0.08) 0%, transparent 70%)' }} />
 
-      {/* Decorative lines */}
       <div className="absolute top-0 left-0 right-0 glow-line" />
       <div className="absolute bottom-0 left-0 right-0 glow-line" />
 

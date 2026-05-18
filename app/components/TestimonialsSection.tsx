@@ -1,5 +1,3 @@
-'use client';
-
 const testimonials = [
   { name: 'Ana Lima', role: 'Coach de carreira', text: 'Em 30 dias aplicando o método, minha taxa de conversão no Direct triplicou. Finalmente entendi que o problema não era o meu produto.', result: '+312% em conversões' },
   { name: 'Marcus Tavares', role: 'Personal Trainer', text: 'Eu tinha 8 mil seguidores e não vendia nada. Depois do CEV entendi exatamente onde estava o buraco na minha estratégia.', result: 'R$ 18K em um mês' },
@@ -35,9 +33,8 @@ export default function TestimonialsSection() {
               className="relative p-7 rounded-sm group hover:-translate-y-1 transition-all duration-300"
               style={{ background: '#111111', border: '1px solid #1F1F1F' }}
             >
-              {/* Aspas decorativas */}
               <div className="absolute top-4 right-5 font-bebas text-7xl leading-none select-none"
-                style={{ color: 'rgba(214,163,84,0.08)' }}>"</div>
+                style={{ color: 'rgba(214,163,84,0.08)' }}>&quot;</div>
 
               <div className="mb-5 p-3 rounded-sm inline-block"
                 style={{ background: 'rgba(214,163,84,0.1)', border: '1px solid rgba(214,163,84,0.15)' }}>
@@ -45,7 +42,7 @@ export default function TestimonialsSection() {
               </div>
 
               <p className="text-sm leading-relaxed mb-6 relative z-10" style={{ color: '#B3B3B3' }}>
-                "{t.text}"
+                &quot;{t.text}&quot;
               </p>
 
               <div className="flex items-center gap-3 pt-5" style={{ borderTop: '1px solid #1F1F1F' }}>

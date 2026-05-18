@@ -1,15 +1,6 @@
-'use client';
-
-import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function HeroSection() {
-  useEffect(() => {
-    const letters = document.querySelectorAll('.hero-letter');
-    letters.forEach((el, i) => {
-      (el as HTMLElement).style.animationDelay = `${i * 0.05}s`;
-    });
-  }, []);
-
   return (
     <section
       className="relative flex flex-col mesh-bg"
@@ -75,7 +66,7 @@ export default function HeroSection() {
           ))}
         </div>
 
-        {/* Print da plataforma — ACIMA do CTA */}
+        {/* Print da plataforma */}
         <div
           data-aos="fade-up"
           data-aos-delay="600"
@@ -97,7 +88,7 @@ export default function HeroSection() {
             <div className="ml-3 flex-1 h-5 rounded-sm" style={{ background: '#1F1F1F', maxWidth: '300px' }} />
           </div>
 
-          {/* Imagem */}
+          {/* Imagem otimizada */}
           <div
             className="relative overflow-hidden rounded-b-xl"
             style={{
@@ -106,20 +97,19 @@ export default function HeroSection() {
               boxShadow: '0 40px 100px rgba(0,0,0,0.7), 0 0 60px rgba(214,163,84,0.07)',
             }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/plataforma1.png"
               alt="Plataforma CEV"
+              width={1200}
+              height={800}
+              priority
               className="w-full h-auto block"
             />
           </div>
 
-          {/* Brilho dourado sutil nas bordas */}
           <div
             className="absolute inset-0 rounded-xl pointer-events-none"
-            style={{
-              boxShadow: 'inset 0 0 0 1px rgba(214,163,84,0.08)',
-            }}
+            style={{ boxShadow: 'inset 0 0 0 1px rgba(214,163,84,0.08)' }}
           />
         </div>
 
@@ -131,7 +121,7 @@ export default function HeroSection() {
           </p>
         </div>
 
-        {/* CTA — abaixo do print */}
+        {/* CTA */}
         <div data-aos="fade-up" data-aos-delay="800" className="mb-24">
           <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-sm font-bold tracking-wide uppercase">
             Quero o Método CEV agora

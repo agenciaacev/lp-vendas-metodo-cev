@@ -1,5 +1,3 @@
-'use client';
-
 const turns = [
   { micro: 'Do invisível ao encontrado', headline: 'Você para de ser ignorado nas redes.' },
   { micro: 'Do anônimo ao protagonista', headline: 'Você para de competir e vira a escolha óbvia.' },

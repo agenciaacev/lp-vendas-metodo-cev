@@ -1,5 +1,3 @@
-'use client';
-
 const pains = [
   'Você posta todo dia, segue tendências, usa as hashtags certas... e no fim do mês a conta bancária não reflete nenhum esforço.',
   'Você já investiu em outros cursos de "marketing digital" e saiu com a cabeça cheia de teoria e o bolso igual.',
@@ -39,7 +37,6 @@ export default function PainSection() {
                 border: '1px solid #1F1F1F',
               }}
             >
-              {/* Hover glow */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{ background: 'linear-gradient(90deg, rgba(214,163,84,0.04), transparent)' }} />
 
@@ -54,10 +51,9 @@ export default function PainSection() {
           ))}
         </div>
 
-        {/* Fechamento filosófico */}
         <div data-aos="fade-up" className="relative p-8 sm:p-10 rounded-sm"
           style={{ border: '1px solid rgba(214,163,84,0.3)', background: 'rgba(214,163,84,0.03)' }}>
-          <div className="absolute -top-3 left-10 text-6xl font-bebas" style={{ color: 'rgba(214,163,84,0.15)' }}>"</div>
+          <div className="absolute -top-3 left-10 text-6xl font-bebas" style={{ color: 'rgba(214,163,84,0.15)' }}>&quot;</div>
           <blockquote className="text-xl sm:text-2xl leading-relaxed font-light text-center" style={{ color: '#FFFFFF' }}>
             Conteúdo sem estratégia é <span className="gold-text font-semibold">entretenimento</span>.<br />
             Estratégia sem venda é <span className="gold-text font-semibold">hobby</span>.<br />

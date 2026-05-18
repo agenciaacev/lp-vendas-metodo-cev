@@ -1,5 +1,3 @@
-'use client';
-
 const cards = [
   {
     letter: 'C',
@@ -37,7 +35,7 @@ export default function FrameworkSection() {
             <span className="text-white" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.25)', color: 'transparent' }}>de crescimento.</span>
           </h2>
           <p className="max-w-2xl mx-auto text-base sm:text-lg" style={{ color: '#B3B3B3' }} data-aos="fade-up" data-aos-delay="200">
-            O CEV não é mais um curso de "como crescer no Instagram". É um framework operacional que cobre todo o ciclo de um negócio digital: da produção à conversão.
+            O CEV não é mais um curso de &quot;como crescer no Instagram&quot;. É um framework operacional que cobre todo o ciclo de um negócio digital: da produção à conversão.
           </p>
         </div>
 
@@ -50,11 +48,9 @@ export default function FrameworkSection() {
               className="relative p-8 rounded-sm group transition-all duration-500 hover:-translate-y-2 overflow-hidden"
               style={{ background: '#111111', border: '1px solid #1F1F1F' }}
             >
-              {/* Hover gradient */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ background: 'linear-gradient(135deg, rgba(214,163,84,0.07), transparent)' }} />
 
-              {/* Giant letter background */}
               <div className="absolute -right-4 -bottom-8 font-bebas text-9xl select-none transition-all duration-500 group-hover:opacity-20"
                 style={{ color: 'rgba(214,163,84,0.08)', fontSize: '10rem', lineHeight: 1 }}>
                 {card.letter}

@@ -1,5 +1,3 @@
-'use client';
-
 const stats = [
   { num: '697K', label: 'seguidores no Instagram' },
   { num: '500M+', label: 'views no TikTok' },
@@ -21,7 +19,6 @@ export default function ExpertSection() {
           <div data-aos="fade-right" data-aos-duration="800" className="relative">
             <div className="relative aspect-[3/4] max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden"
               style={{ border: '1px solid #1F1F1F' }}>
-              {/* Placeholder elegante */}
               <div className="w-full h-full flex flex-col items-center justify-center relative"
                 style={{ background: 'linear-gradient(135deg, #111111, #0B0B0D)' }}>
                 <div className="w-32 h-32 rounded-full mb-4"
@@ -29,12 +26,10 @@ export default function ExpertSection() {
                 <div className="font-bebas text-4xl" style={{ color: 'rgba(214,163,84,0.4)' }}>CLEANE FONTENELE</div>
                 <div className="text-sm mt-2" style={{ color: '#777777' }}>Foto da especialista</div>
               </div>
-              {/* Decoração de borda */}
               <div className="absolute top-4 right-4 w-16 h-16 border-t border-r" style={{ borderColor: '#D6A354' }} />
               <div className="absolute bottom-4 left-4 w-16 h-16 border-b border-l" style={{ borderColor: '#D6A354' }} />
             </div>
 
-            {/* Badge flutuante */}
             <div className="absolute -bottom-6 -right-6 sm:right-0 p-4 rounded-sm hidden sm:block"
               style={{ background: '#111111', border: '1px solid rgba(214,163,84,0.3)' }}>
               <div className="font-bebas text-3xl gold-text">22K</div>
@@ -62,7 +57,6 @@ export default function ExpertSection() {
               </p>
             </div>
 
-            {/* Stats grid */}
             <div className="grid grid-cols-2 gap-4" data-aos="fade-up" data-aos-delay="200">
               {stats.map((s, i) => (
                 <div key={i} className="p-5 rounded-sm"

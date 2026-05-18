@@ -1,5 +1,3 @@
-'use client';
-
 const plans = [
   {
     name: 'Essencial',
@@ -83,7 +81,6 @@ export default function PricingSection() {
                 boxShadow: plan.highlight ? '0 0 40px rgba(214,163,84,0.1)' : 'none',
               }}
             >
-              {/* Glow top border */}
               {plan.highlight && (
                 <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg, transparent, #D6A354, transparent)' }} />
               )}

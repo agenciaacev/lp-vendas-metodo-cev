@@ -1,6 +1,3 @@
-'use client';
-
-import { useEffect } from 'react';
 import AnnouncementBar from './components/AnnouncementBar';
 import HeroSection from './components/HeroSection';
 import PainSection from './components/PainSection';
@@ -15,24 +12,12 @@ import FAQSection from './components/FAQSection';
 import FinalCTASection from './components/FinalCTASection';
 import Footer from './components/Footer';
 import StickyCTA from './components/StickyCTA';
+import AosInit from './components/AosInit';
 
 export default function Home() {
-  useEffect(() => {
-    const initAOS = async () => {
-      const AOS = (await import('aos')).default;
-      await import('aos/dist/aos.css');
-      AOS.init({
-        duration: 700,
-        easing: 'ease-out-cubic',
-        once: true,
-        offset: 60,
-      });
-    };
-    initAOS();
-  }, []);
-
   return (
     <main>
+      <AosInit />
       <AnnouncementBar />
       <HeroSection />
       <PainSection />
