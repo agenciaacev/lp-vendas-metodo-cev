@@ -17,7 +17,7 @@ export default function TestimonialsSection() {
 
         <div className="text-center mb-20" data-aos="fade-up">
           <span className="section-label block mb-6">Resultados reais</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
             O método já está funcionando.<br />
             Para quem decidiu{' '}
             <span className="gold-gradient">parar de esperar.</span>
@@ -30,13 +30,13 @@ export default function TestimonialsSection() {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 80}
-              className="relative p-7 rounded-sm group hover:-translate-y-1 transition-all duration-300"
+              className="relative p-7 rounded-xl group hover:-translate-y-1 transition-all duration-300"
               style={{ background: '#111111', border: '1px solid #1F1F1F' }}
             >
               <div className="absolute top-4 right-5 font-bebas text-7xl leading-none select-none"
                 style={{ color: 'rgba(214,163,84,0.08)' }}>&quot;</div>
 
-              <div className="mb-5 p-3 rounded-sm inline-block"
+              <div className="mb-5 p-3 rounded-xl inline-block"
                 style={{ background: 'rgba(214,163,84,0.1)', border: '1px solid rgba(214,163,84,0.15)' }}>
                 <span className="text-xs font-bold" style={{ color: '#D6A354' }}>{t.result}</span>
               </div>

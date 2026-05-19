@@ -15,7 +15,7 @@ export default function BonusSection() {
 
         <div className="text-center mb-6" data-aos="fade-up">
           <span className="section-label block mb-6">Bônus exclusivos</span>
-          <h2 className="font-bebas leading-tight mb-4" style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight mb-4" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
             Espera. Antes de fechar,<br />
             veja o que ainda vem<br />
             <span className="gold-gradient">junto com o curso.</span>
@@ -29,7 +29,7 @@ export default function BonusSection() {
         </div>
 
         <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="150">
-          <div className="inline-flex items-center gap-4 px-8 py-4 rounded-sm"
+          <div className="inline-flex items-center gap-4 px-8 py-4 rounded-xl"
             style={{ background: 'rgba(214,163,84,0.05)', border: '1px solid rgba(214,163,84,0.2)' }}>
             <span className="text-sm" style={{ color: '#B3B3B3' }}>Valor total dos bônus:</span>
             <span className="font-bebas text-3xl gold-text">R$ 290</span>
@@ -45,7 +45,7 @@ export default function BonusSection() {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 100}
-              className="relative p-7 rounded-sm group transition-all duration-300 hover:border-opacity-100"
+              className="relative p-7 rounded-xl group transition-all duration-300 hover:border-opacity-100"
               style={{ background: '#111111', border: '1px solid #1F1F1F' }}
             >
               <div className="absolute top-0 left-0 right-0 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300"

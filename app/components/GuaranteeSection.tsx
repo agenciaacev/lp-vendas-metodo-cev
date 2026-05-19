@@ -12,7 +12,7 @@ export default function GuaranteeSection() {
 
         <span className="section-label block mb-6">Garantia incondicional</span>
 
-        <h2 className="font-bebas leading-tight mb-8" style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', color: '#FFFFFF' }}>
+        <h2 className="font-bebas leading-tight mb-8" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
           Se não for para você,{' '}
           <span className="gold-gradient">devolvemos tudo.</span>
           <br />Sem perguntas.
@@ -24,7 +24,7 @@ export default function GuaranteeSection() {
             { num: '100%', label: 'reembolso garantido', icon: '💰' },
             { num: '0', label: 'perguntas feitas', icon: '🤝' },
           ].map((item, i) => (
-            <div key={i} className="p-6 rounded-sm" style={{ background: '#111111', border: '1px solid #1F1F1F' }}>
+            <div key={i} className="p-6 rounded-xl" style={{ background: '#111111', border: '1px solid #1F1F1F' }}>
               <div className="text-3xl mb-3">{item.icon}</div>
               <div className="font-bebas text-5xl gold-text mb-1">{item.num}</div>
               <div className="text-sm" style={{ color: '#B3B3B3' }}>{item.label}</div>

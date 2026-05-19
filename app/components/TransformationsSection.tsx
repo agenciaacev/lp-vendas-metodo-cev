@@ -20,7 +20,7 @@ export default function TransformationsSection() {
           {/* Coluna sticky */}
           <div className="lg:sticky lg:top-24 lg:self-start" data-aos="fade-right">
             <span className="section-label block mb-6">As viradas do método</span>
-            <h2 className="font-bebas leading-tight mb-6" style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', color: '#FFFFFF' }}>
+            <h2 className="font-bebas leading-tight mb-6" style={{ fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
               Sete viradas que vão mudar a forma como você vende{' '}
               <span className="gold-gradient">para sempre.</span>
             </h2>
@@ -28,12 +28,12 @@ export default function TransformationsSection() {
               Cada módulo do CEV foi desenhado para gerar uma transformação específica no seu negócio digital.
             </p>
 
-            <div className="mt-12 p-6 rounded-sm" style={{ background: '#111111', border: '1px solid #1F1F1F' }}>
+            <div className="mt-12 p-6 rounded-xl" style={{ background: '#111111', border: '1px solid #1F1F1F' }}>
               <div className="font-bebas text-6xl gold-text mb-2">7</div>
               <div className="text-sm" style={{ color: '#B3B3B3' }}>módulos de transformação</div>
             </div>
 
-            <button className="btn-gold mt-8 px-8 py-4 rounded-sm text-sm font-bold tracking-wide uppercase">
+            <button className="btn-gold mt-8 px-8 py-4 rounded-xl text-sm font-bold tracking-wide uppercase">
               Quero começar essa jornada
             </button>
           </div>
@@ -45,7 +45,7 @@ export default function TransformationsSection() {
                 key={i}
                 data-aos="fade-left"
                 data-aos-delay={i * 80}
-                className="relative p-7 rounded-sm group transition-all duration-300 hover:border-opacity-100 cursor-default"
+                className="relative p-7 rounded-xl group transition-all duration-300 hover:border-opacity-100 cursor-default"
                 style={{ background: '#0B0B0D', border: '1px solid #1F1F1F' }}
               >
                 <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"

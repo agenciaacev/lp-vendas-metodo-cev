@@ -27,7 +27,7 @@ export default function HeroSection() {
 
         {/* Headline */}
         <div className="mb-6">
-          <h1 className="font-bebas leading-none" style={{ fontSize: 'clamp(2.8rem, 6vw, 5.5rem)' }}>
+          <h1 className="font-bebas leading-none" style={{ fontSize: 'clamp(2.24rem, 4.8vw, 4.4rem)' }}>
             <span className="block text-white" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
               Você produz
             </span>
@@ -85,7 +85,7 @@ export default function HeroSection() {
             <span className="w-3 h-3 rounded-full" style={{ background: '#FF5F57' }} />
             <span className="w-3 h-3 rounded-full" style={{ background: '#FFBD2E' }} />
             <span className="w-3 h-3 rounded-full" style={{ background: '#28C840' }} />
-            <div className="ml-3 flex-1 h-5 rounded-sm" style={{ background: '#1F1F1F', maxWidth: '300px' }} />
+            <div className="ml-3 flex-1 h-5 rounded-xl" style={{ background: '#1F1F1F', maxWidth: '300px' }} />
           </div>
 
           {/* Imagem otimizada */}
@@ -123,7 +123,7 @@ export default function HeroSection() {
 
         {/* CTA */}
         <div data-aos="fade-up" data-aos-delay="800" className="mb-24">
-          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-sm font-bold tracking-wide uppercase">
+          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
             Quero o Método CEV agora
           </button>
           <p className="mt-4 text-sm" style={{ color: '#777777' }}>

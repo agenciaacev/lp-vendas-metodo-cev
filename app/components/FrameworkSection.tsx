@@ -29,7 +29,7 @@ export default function FrameworkSection() {
 
         <div className="text-center mb-20">
           <span className="section-label block mb-6" data-aos="fade-up">O framework</span>
-          <h2 className="font-bebas leading-none mb-6" style={{ fontSize: 'clamp(3.5rem, 9vw, 9rem)' }} data-aos="fade-up" data-aos-delay="100">
+          <h2 className="font-bebas leading-none mb-6" style={{ fontSize: 'clamp(2.46rem, 6.34vw, 6.34rem)' }} data-aos="fade-up" data-aos-delay="100">
             <span className="gold-gradient">Três letras.</span><br />
             <span className="text-white">Um sistema completo</span><br />
             <span className="text-white" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.25)', color: 'transparent' }}>de crescimento.</span>
@@ -45,7 +45,7 @@ export default function FrameworkSection() {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 120}
-              className="relative p-8 rounded-sm group transition-all duration-500 hover:-translate-y-2 overflow-hidden"
+              className="relative p-8 rounded-xl group transition-all duration-500 hover:-translate-y-2 overflow-hidden"
               style={{ background: '#111111', border: '1px solid #1F1F1F' }}
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -58,7 +58,7 @@ export default function FrameworkSection() {
 
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-sm flex items-center justify-center font-bebas text-3xl"
+                  <div className="w-14 h-14 rounded-xl flex items-center justify-center font-bebas text-3xl"
                     style={{ background: 'rgba(214,163,84,0.1)', color: '#D6A354', border: '1px solid rgba(214,163,84,0.2)' }}>
                     {card.letter}
                   </div>

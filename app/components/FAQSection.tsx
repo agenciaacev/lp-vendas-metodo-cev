@@ -19,7 +19,7 @@ export default function FAQSection() {
 
         <div className="text-center mb-16" data-aos="fade-up">
           <span className="section-label block mb-6">Perguntas frequentes</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
             Suas dúvidas,{' '}
             <span className="gold-gradient">respondidas.</span>
           </h2>
@@ -31,7 +31,7 @@ export default function FAQSection() {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 60}
-              className="rounded-sm overflow-hidden transition-all duration-300"
+              className="rounded-xl overflow-hidden transition-all duration-300"
               style={{ border: `1px solid ${open === i ? 'rgba(214,163,84,0.3)' : '#1F1F1F'}`, background: '#111111' }}
             >
               <button

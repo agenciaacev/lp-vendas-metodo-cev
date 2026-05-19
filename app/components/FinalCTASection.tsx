@@ -11,7 +11,7 @@ export default function FinalCTASection() {
 
         <span className="section-label block mb-8" data-aos="fade-up">Última chamada</span>
 
-        <h2 className="font-bebas leading-none mb-10" style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)' }} data-aos="fade-up" data-aos-delay="100">
+        <h2 className="font-bebas leading-none mb-10" style={{ fontSize: 'clamp(2.46rem, 7.04vw, 7.04rem)' }} data-aos="fade-up" data-aos-delay="100">
           <span className="block text-white">O conteúdo que você</span>
           <span className="block gold-gradient">cria amanhã pode</span>
           <span className="block text-white" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)', color: 'transparent' }}>
@@ -25,7 +25,7 @@ export default function FinalCTASection() {
         </p>
 
         <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="btn-gold px-12 py-5 rounded-sm text-base font-bold tracking-wide uppercase">
+          <button className="btn-gold px-12 py-5 rounded-xl text-base font-bold tracking-wide uppercase">
             Quero o Método CEV agora
           </button>
           <div className="text-sm" style={{ color: '#777777' }}>

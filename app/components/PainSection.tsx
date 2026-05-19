@@ -18,7 +18,7 @@ export default function PainSection() {
 
         <div className="mb-16" data-aos="fade-up">
           <span className="section-label block mb-6">O diagnóstico honesto</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
             Seu produto não é o problema.
             A forma como você comunica 
             <span className="gold-gradient"> e vende, sim.</span>
@@ -31,7 +31,7 @@ export default function PainSection() {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 80}
-              className="flex items-start gap-5 p-6 rounded-sm relative overflow-hidden group transition-all duration-300 hover:border-opacity-50"
+              className="flex items-start gap-5 p-6 rounded-xl relative overflow-hidden group transition-all duration-300 hover:border-opacity-50"
               style={{
                 background: '#111111',
                 border: '1px solid #1F1F1F',
@@ -51,7 +51,7 @@ export default function PainSection() {
           ))}
         </div>
 
-        <div data-aos="fade-up" className="relative p-8 sm:p-10 rounded-sm"
+        <div data-aos="fade-up" className="relative p-8 sm:p-10 rounded-xl"
           style={{ border: '1px solid rgba(214,163,84,0.3)', background: 'rgba(214,163,84,0.03)' }}>
           <div className="absolute -top-3 left-10 text-6xl font-bebas" style={{ color: 'rgba(214,163,84,0.15)' }}>&quot;</div>
           <blockquote className="text-xl sm:text-2xl leading-relaxed font-light text-center" style={{ color: '#FFFFFF' }}>

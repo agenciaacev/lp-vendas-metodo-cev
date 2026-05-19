@@ -62,7 +62,7 @@ export default function PricingSection() {
 
         <div className="text-center mb-20" data-aos="fade-up">
           <span className="section-label block mb-6">Planos</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
             Três formas de entrar.<br />
             <span className="gold-gradient">Uma única decisão certa.</span>
           </h2>
@@ -74,16 +74,14 @@ export default function PricingSection() {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 100}
-              className="relative rounded-sm overflow-hidden transition-all duration-500 hover:-translate-y-2"
+              className="relative rounded-xl overflow-hidden transition-all duration-500 hover:-translate-y-2"
               style={{
-                background: plan.highlight ? 'linear-gradient(135deg, #111111, #0f0f0f)' : '#111111',
-                border: plan.highlight ? '1px solid rgba(214,163,84,0.5)' : '1px solid #1F1F1F',
-                boxShadow: plan.highlight ? '0 0 40px rgba(214,163,84,0.1)' : 'none',
+                background: 'linear-gradient(135deg, #111111, #0f0f0f)',
+                border: '1px solid rgba(214,163,84,0.5)',
+                boxShadow: '0 0 40px rgba(214,163,84,0.1)',
               }}
             >
-              {plan.highlight && (
-                <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg, transparent, #D6A354, transparent)' }} />
-              )}
+              <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg, transparent, #D6A354, transparent)' }} />
 
               {plan.badge && (
                 <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold"
@@ -97,7 +95,7 @@ export default function PricingSection() {
                   <div className="text-sm font-semibold mb-3" style={{ color: '#777777' }}>{plan.name}</div>
                   <div className="flex items-baseline gap-1 mb-1">
                     <span className="text-xs" style={{ color: '#B3B3B3' }}>{plan.installments}</span>
-                    <span className="font-bebas text-5xl" style={{ color: plan.highlight ? '#F1C87A' : '#D6A354' }}>
+                    <span className="font-bebas text-5xl" style={{ color: '#F1C87A' }}>
                       R$ {plan.price}
                     </span>
                   </div>
@@ -116,12 +114,7 @@ export default function PricingSection() {
                 </ul>
 
                 <button
-                  className={`w-full py-4 rounded-sm text-sm font-bold tracking-wide uppercase transition-all duration-300 ${plan.highlight ? 'btn-gold' : ''}`}
-                  style={!plan.highlight ? {
-                    background: 'transparent',
-                    border: '1px solid #1F1F1F',
-                    color: '#777777',
-                  } : {}}
+                  className="btn-gold w-full py-4 rounded-xl text-sm font-bold tracking-wide uppercase transition-all duration-300"
                 >
                   {plan.cta}
                 </button>
