@@ -16,34 +16,30 @@ export default function HeroSection() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-10"
         style={{ background: 'radial-gradient(circle, #D6A354, transparent 70%)' }} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-0 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-0 w-full text-center">
 
         {/* Eyebrow */}
-        <div className="flex items-center gap-3 mb-6" data-aos="fade-down" data-aos-duration="600">
+        <div className="flex items-center justify-center gap-3 mb-6" data-aos="fade-down" data-aos-duration="600">
           <div className="h-px w-8" style={{ background: '#D6A354' }} />
           <span className="section-label">Método CEV — Cleane Fontenele</span>
           <div className="h-px w-8" style={{ background: '#D6A354' }} />
         </div>
 
         {/* Headline */}
-        <div className="mb-6">
-          <h1 className="font-bebas leading-none" style={{ fontSize: 'clamp(2.24rem, 4.8vw, 4.4rem)' }}>
-            <span className="block text-white" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-              Você produz
-            </span>
-            <span className="block" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-              <span className="gold-gradient">conteúdo</span>
-              <span className="text-white"> todo dia</span>
-            </span>
-            <span className="block" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300"
-              style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)', color: 'transparent' }}>
-              e não vende nada.
-            </span>
+        <div className="mb-6" data-aos="fade-up" data-aos-duration="700">
+          <h1
+            className="font-bebas leading-none w-full text-center"
+            style={{ fontSize: 'clamp(2.4rem, 3.5vw, 4.4rem)' }}
+          >
+            <span className="text-white">Você produz </span>
+            <span className="gold-gradient">conteúdo</span>
+            <span className="text-white"> todo dia </span>
+            <span style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)', color: 'transparent' }}>e não vende nada.</span>
           </h1>
         </div>
 
         {/* Subheadline */}
-        <div className="max-w-2xl mb-8" data-aos="fade-up" data-aos-delay="400">
+        <div className="max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="400">
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#B3B3B3' }}>
             O problema não é a quantidade de conteúdo que você faz.
             É que você nunca teve um método para transformar audiência em faturamento.
@@ -52,7 +48,7 @@ export default function HeroSection() {
         </div>
 
         {/* Provas sociais */}
-        <div className="flex flex-wrap gap-6 mb-10" data-aos="fade-up" data-aos-delay="500">
+        <div className="flex flex-wrap justify-center gap-6 mb-10" data-aos="fade-up" data-aos-delay="500">
           {[
             { num: '+697 mil', label: 'seguidores impactados' },
             { num: '500M', label: 'visualizações' },
@@ -114,7 +110,7 @@ export default function HeroSection() {
         </div>
 
         {/* Aprenda com quem vive o mercado */}
-        <div className="max-w-2xl mb-10" data-aos="fade-up" data-aos-delay="700">
+        <div className="max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="700">
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#B3B3B3' }}>
             Aprenda com quem vive o mercado de comunicação a mais de 17 anos{' '}
             <span className="text-white font-semibold">NA PRÁTICA</span>, e não na teoria.
@@ -122,7 +118,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTA */}
-        <div data-aos="fade-up" data-aos-delay="800" className="mb-24">
+        <div data-aos="fade-up" data-aos-delay="800" className="mb-24 flex flex-col items-center">
           <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
             Quero o Método CEV agora
           </button>

@@ -61,6 +61,15 @@ export default function PainSection() {
           </blockquote>
         </div>
 
+        <div data-aos="fade-up" data-aos-delay="100" className="mt-16 flex flex-col items-center">
+          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
+            Quero o Método CEV agora
+          </button>
+          <p className="mt-4 text-sm" style={{ color: '#777777' }}>
+            ↓ A partir de 12x de R$ 16,42 — acesso imediato
+          </p>
+        </div>
+
       </div>
     </section>
   );
