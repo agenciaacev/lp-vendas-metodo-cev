@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const stats = [
   { num: '697K', label: 'seguidores no Instagram' },
-  { num: '500M+', label: 'views no TikTok' },
+  { num: '1B+', label: 'views no TikTok' },
   { num: '25', label: 'marcas parceiras' },
   { num: '7+', label: 'anos no digital' },
 ];
@@ -33,12 +33,6 @@ export default function ExpertSection() {
               </div>
               <div className="absolute top-4 right-4 w-16 h-16 border-t border-r" style={{ borderColor: '#D6A354' }} />
               <div className="absolute bottom-4 left-4 w-16 h-16 border-b border-l" style={{ borderColor: '#D6A354' }} />
-            </div>
-
-            <div className="absolute -bottom-6 -right-6 sm:right-0 p-4 rounded-xl hidden sm:block"
-              style={{ background: '#111111', border: '1px solid rgba(214,163,84,0.3)' }}>
-              <div className="font-bebas text-3xl gold-text">22K</div>
-              <div className="text-xs" style={{ color: '#B3B3B3' }}>publicações</div>
             </div>
           </div>
 
