@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const stats = [
-  { num: '697K', label: 'seguidores no Instagram' },
+  { num: '6M+', label: 'seguidores no Instagram' },
   { num: '1B+', label: 'views no TikTok' },
   { num: '25', label: 'marcas parceiras' },
   { num: '7+', label: 'anos no digital' },
