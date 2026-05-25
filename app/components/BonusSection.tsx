@@ -67,9 +67,9 @@ export default function BonusSection() {
       </div>
 
       <div data-aos="fade-up" data-aos-delay="100" className="flex flex-col items-center pt-16 pb-28">
-        <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
+        <a href="#planos" className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase inline-block">
           Quero o Método CEV agora
-        </button>
+        </a>
       </div>
     </section>
   );

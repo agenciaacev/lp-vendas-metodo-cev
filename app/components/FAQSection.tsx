@@ -64,9 +64,9 @@ export default function FAQSection() {
         </div>
 
         <div data-aos="fade-up" data-aos-delay="100" className="mt-16 flex flex-col items-center">
-          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
+          <a href="#planos" className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase inline-block">
             Quero o Método CEV agora
-          </button>
+          </a>
         </div>
 
       </div>

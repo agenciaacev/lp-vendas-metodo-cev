@@ -119,9 +119,9 @@ export default function HeroSection() {
 
         {/* CTA */}
         <div data-aos="fade-up" data-aos-delay="800" className="mb-24 flex flex-col items-center">
-          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
+          <a href="#planos" className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase inline-block">
             Quero o Método CEV agora
-          </button>
+          </a>
           <p className="mt-4 text-sm" style={{ color: '#777777' }}>
             ↓ A partir de 12x de R$ 16,42 — acesso imediato
           </p>

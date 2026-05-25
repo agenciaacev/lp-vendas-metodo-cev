@@ -34,9 +34,9 @@ export default function TransformationsSection() {
                 <div className="font-bebas text-6xl gold-text mb-2">7</div>
                 <div className="text-sm" style={{ color: '#B3B3B3' }}>módulos de transformação</div>
               </div>
-              <button className="btn-gold mt-6 w-full py-5 rounded-xl text-base font-bold tracking-wide uppercase">
+              <a href="#planos" className="btn-gold mt-6 w-full py-5 rounded-xl text-base font-bold tracking-wide uppercase inline-block text-center">
                 Quero começar essa jornada
-              </button>
+              </a>
             </div>
           </div>
 

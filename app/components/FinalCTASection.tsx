@@ -25,9 +25,9 @@ export default function FinalCTASection() {
         </p>
 
         <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="btn-gold px-12 py-5 rounded-xl text-base font-bold tracking-wide uppercase">
+          <a href="#planos" className="btn-gold px-12 py-5 rounded-xl text-base font-bold tracking-wide uppercase inline-block">
             Quero o Método CEV agora
-          </button>
+          </a>
           <div className="text-sm" style={{ color: '#777777' }}>
             ↓ A partir de 12x de R$ 16,42
           </div>
