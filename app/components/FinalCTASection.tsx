@@ -11,7 +11,7 @@ export default function FinalCTASection() {
 
         <span className="section-label block mb-8" data-aos="fade-up">Última chamada</span>
 
-        <h2 className="font-bebas leading-none mb-10" style={{ fontSize: 'clamp(2.46rem, 7.04vw, 7.04rem)' }} data-aos="fade-up" data-aos-delay="100">
+        <h2 className="font-bebas leading-none mb-10 text-balance" style={{ fontSize: 'clamp(2.46rem, 7.04vw, 7.04rem)' }} data-aos="fade-up" data-aos-delay="100">
           <span className="block text-white">O conteúdo que você</span>
           <span className="block gold-gradient">cria amanhã pode</span>
           <span className="block text-white" style={{ color: '#FFFFFF' }}>

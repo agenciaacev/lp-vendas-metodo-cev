@@ -12,7 +12,7 @@ export default function GuaranteeSection() {
 
         <span className="section-label block mb-6">Garantia incondicional</span>
 
-        <h2 className="font-bebas leading-tight mb-8" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
+        <h2 className="font-bebas leading-tight mb-8 text-balance" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
           <span className="block">Se não for para você,</span>
           <span className="block gold-gradient" style={{ whiteSpace: 'nowrap' }}>devolvemos tudo.</span>
           <span className="block">Sem perguntas.</span>

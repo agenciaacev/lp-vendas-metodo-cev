@@ -74,7 +74,7 @@ export default function PricingSection() {
 
         <div className="text-center mb-20" data-aos="fade-up">
           <span className="section-label block mb-6">Planos</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight text-balance" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
             Três formas de entrar.<br />
             <span className="gold-gradient">Uma única decisão certa.</span>
           </h2>
@@ -116,7 +116,7 @@ export default function PricingSection() {
                   <div className="text-xs font-semibold tracking-widest uppercase mt-2" style={{ color: '#777777' }}>
                     {plan.installments}
                   </div>
-                  <div className="font-bebas text-4xl" style={{ color: '#F1C87A' }}>
+                  <div className="font-bebas text-6xl" style={{ color: '#F1C87A' }}>
                     R$ {plan.price}
                   </div>
                   <div className="flex items-center gap-2 mt-1 flex-wrap">

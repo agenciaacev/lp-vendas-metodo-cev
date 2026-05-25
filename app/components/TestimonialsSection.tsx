@@ -17,7 +17,7 @@ export default function TestimonialsSection() {
 
         <div className="text-center mb-20" data-aos="fade-up">
           <span className="section-label block mb-6">Resultados reais</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight text-balance" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
             O método já está funcionando.<br />
             Para quem decidiu{' '}
             <span className="gold-gradient">parar de esperar.</span>

@@ -19,7 +19,7 @@ export default function FAQSection() {
 
         <div className="text-center mb-16" data-aos="fade-up">
           <span className="section-label block mb-6">Perguntas frequentes</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight text-balance" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
             Suas dúvidas,{' '}
             <span className="gold-gradient">respondidas.</span>
           </h2>

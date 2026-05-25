@@ -15,7 +15,7 @@ export default function BonusSection() {
 
         <div className="text-center mb-6" data-aos="fade-up">
           <span className="section-label block mb-6">Bônus exclusivos</span>
-          <h2 className="font-bebas leading-tight mb-4" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
+          <h2 className="font-bebas leading-tight mb-4 text-balance" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
             Espera. Antes de fechar,<br />
             veja o que ainda vem<br />
             <span className="gold-gradient">junto com o curso.</span>

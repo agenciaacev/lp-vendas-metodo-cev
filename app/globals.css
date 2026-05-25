@@ -17,6 +17,8 @@
 
 * { box-sizing: border-box; }
 
+p, li, blockquote, span { text-wrap: pretty; }
+
 html { scroll-behavior: smooth; }
 
 body {

@@ -19,12 +19,12 @@ export default function TransformationsSection() {
 
           {/* Coluna sticky */}
           <div className="lg:sticky lg:top-24 lg:self-start" data-aos="fade-right">
-            <span className="section-label block mb-6">As viradas do método</span>
-            <h2 className="font-bebas leading-tight mb-6" style={{ fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
+            <span className="section-label block mb-6 text-center lg:text-left">As viradas do método</span>
+            <h2 className="font-bebas leading-tight mb-6 text-center lg:text-left text-balance" style={{ fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
               Sete viradas que vão mudar a forma como você vende{' '}
               <span className="gold-gradient">para sempre.</span>
             </h2>
-            <p className="text-base" style={{ color: '#777777' }}>
+            <p className="text-base text-center lg:text-left" style={{ color: '#777777' }}>
               Cada módulo do CEV foi desenhado para gerar uma transformação específica no seu negócio digital.
             </p>
 

@@ -29,7 +29,7 @@ export default function FrameworkSection() {
 
         <div className="text-center mb-20">
           <span className="section-label block mb-6" data-aos="fade-up">O framework</span>
-          <h2 className="font-bebas leading-none mb-6" style={{ fontSize: 'clamp(2.46rem, 6.34vw, 6.34rem)' }} data-aos="fade-up" data-aos-delay="100">
+          <h2 className="font-bebas leading-none mb-6 text-balance" style={{ fontSize: 'clamp(2.46rem, 6.34vw, 6.34rem)' }} data-aos="fade-up" data-aos-delay="100">
             <span className="gold-gradient">Três letras.</span><br />
             <span className="text-white">Um sistema completo</span><br />
             <span className="text-white" style={{ color: '#FFFFFF' }}>de crescimento.</span>

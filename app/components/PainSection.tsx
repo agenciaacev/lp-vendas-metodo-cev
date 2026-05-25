@@ -17,8 +17,8 @@ export default function PainSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 
         <div className="mb-16" data-aos="fade-up">
-          <span className="section-label block mb-6">O diagnóstico honesto</span>
-          <h2 className="font-bebas leading-tight" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
+          <span className="section-label block mb-6 text-center lg:text-left">O diagnóstico honesto</span>
+          <h2 className="font-bebas leading-tight text-center lg:text-left text-balance" style={{ fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: '#FFFFFF' }}>
             Seu produto não é o problema.
             A forma como você comunica 
             <span className="gold-gradient"> e vende, sim.</span>

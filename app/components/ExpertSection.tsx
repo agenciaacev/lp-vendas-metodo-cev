@@ -45,8 +45,8 @@ export default function ExpertSection() {
           {/* Conteúdo */}
           <div>
             <div data-aos="fade-up">
-              <span className="section-label block mb-6">Quem está por trás do método</span>
-              <h2 className="font-bebas leading-tight mb-8" style={{ fontSize: 'clamp(1.76rem, 3.52vw, 3.52rem)', color: '#FFFFFF' }}>
+              <span className="section-label block mb-6 text-center lg:text-left">Quem está por trás do método</span>
+              <h2 className="font-bebas leading-tight mb-8 text-center lg:text-left text-balance" style={{ fontSize: 'clamp(1.76rem, 3.52vw, 3.52rem)', color: '#FFFFFF' }}>
                 Uma especialista que construiu o método{' '}
                 <span className="gold-gradient">vivendo o mercado</span>,<br />
                 não estudando ele.
@@ -54,10 +54,10 @@ export default function ExpertSection() {
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100">
-              <p className="text-base leading-relaxed mb-6" style={{ color: '#B3B3B3' }}>
+              <p className="text-base leading-relaxed mb-6 text-center lg:text-left" style={{ color: '#B3B3B3' }}>
                 Cleane Fontenele não criou o CEV em uma sala de aula. Ela criou testando, errando, ajustando e vendendo — durante anos, em nichos diferentes, para públicos diferentes, em plataformas diferentes.
               </p>
-              <p className="text-base leading-relaxed mb-10" style={{ color: '#B3B3B3' }}>
+              <p className="text-base leading-relaxed mb-10 text-center lg:text-left" style={{ color: '#B3B3B3' }}>
                 O resultado são 22 mil publicações, 25 marcas parceiras nacionais, uma agência de marketing, um programa de TV e um método que já transformou negócios em todo o Brasil.
               </p>
             </div>
