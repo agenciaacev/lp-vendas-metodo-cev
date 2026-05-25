@@ -24,13 +24,10 @@ export default function FinalCTASection() {
           <span className="text-white font-semibold">É método. E o método está aqui.</span>
         </p>
 
-        <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div data-aos="fade-up" data-aos-delay="300" className="flex justify-center items-center">
           <a href="#planos" className="btn-gold px-12 py-5 rounded-xl text-base font-bold tracking-wide uppercase inline-block">
             Quero o Método CEV agora
           </a>
-          <div className="text-sm" style={{ color: '#777777' }}>
-            ↓ A partir de 12x de R$ 16,42
-          </div>
         </div>
 
         <div className="mt-12 flex flex-wrap justify-center gap-8" data-aos="fade-up" data-aos-delay="400">
