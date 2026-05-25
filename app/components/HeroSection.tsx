@@ -50,9 +50,9 @@ export default function HeroSection() {
         {/* Provas sociais */}
         <div className="flex flex-wrap justify-center gap-6 mb-10" data-aos="fade-up" data-aos-delay="500">
           {[
-            { num: '+697 mil', label: 'seguidores impactados' },
-            { num: '500M', label: 'visualizações' },
-            { num: 'Apresentadora', label: 'de TV & CEO de agência' },
+            { num: '+ de 6M', label: 'seguidores impactados' },
+            { num: '+ de 1B', label: 'visualizações' },
+            { num: 'Empresária', label: 'CEO da ACEV' },
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-3">
               <div className="text-sm font-bold" style={{ color: '#D6A354' }}>{item.num}</div>
