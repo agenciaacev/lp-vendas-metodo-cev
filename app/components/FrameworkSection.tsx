@@ -32,7 +32,7 @@ export default function FrameworkSection() {
           <h2 className="font-bebas leading-none mb-6" style={{ fontSize: 'clamp(2.46rem, 6.34vw, 6.34rem)' }} data-aos="fade-up" data-aos-delay="100">
             <span className="gold-gradient">Três letras.</span><br />
             <span className="text-white">Um sistema completo</span><br />
-            <span className="text-white" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.25)', color: 'transparent' }}>de crescimento.</span>
+            <span className="text-white" style={{ color: '#FFFFFF' }}>de crescimento.</span>
           </h2>
           <p className="max-w-2xl mx-auto text-base sm:text-lg" style={{ color: '#B3B3B3' }} data-aos="fade-up" data-aos-delay="200">
             O CEV não é mais um curso de &quot;como crescer no Instagram&quot;. É um framework operacional que cobre todo o ciclo de um negócio digital: da produção à conversão.
@@ -73,6 +73,12 @@ export default function FrameworkSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" className="mt-16 flex flex-col items-center">
+          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
+            Quero o Método CEV agora
+          </button>
         </div>
 
       </div>

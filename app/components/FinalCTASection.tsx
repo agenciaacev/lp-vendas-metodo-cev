@@ -14,7 +14,7 @@ export default function FinalCTASection() {
         <h2 className="font-bebas leading-none mb-10" style={{ fontSize: 'clamp(2.46rem, 7.04vw, 7.04rem)' }} data-aos="fade-up" data-aos-delay="100">
           <span className="block text-white">O conteúdo que você</span>
           <span className="block gold-gradient">cria amanhã pode</span>
-          <span className="block text-white" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)', color: 'transparent' }}>
+          <span className="block text-white" style={{ color: '#FFFFFF' }}>
             vender ou só ocupar espaço.
           </span>
         </h2>

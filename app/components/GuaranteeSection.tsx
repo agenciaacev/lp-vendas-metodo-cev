@@ -13,9 +13,9 @@ export default function GuaranteeSection() {
         <span className="section-label block mb-6">Garantia incondicional</span>
 
         <h2 className="font-bebas leading-tight mb-8" style={{ fontSize: 'clamp(1.76rem, 4.22vw, 4.22rem)', color: '#FFFFFF' }}>
-          Se não for para você,{' '}
-          <span className="gold-gradient">devolvemos tudo.</span>
-          <br />Sem perguntas.
+          <span className="block">Se não for para você,</span>
+          <span className="block gold-gradient" style={{ whiteSpace: 'nowrap' }}>devolvemos tudo.</span>
+          <span className="block">Sem perguntas.</span>
         </h2>
 
         <div className="grid sm:grid-cols-3 gap-6 mt-12">
@@ -35,6 +35,12 @@ export default function GuaranteeSection() {
         <p className="mt-10 text-base max-w-xl mx-auto" style={{ color: '#777777' }}>
           Você tem 7 dias para testar o método, aplicar o que aprendeu e avaliar se vale o investimento. Se não tiver satisfeito por qualquer razão, devolvemos cada centavo.
         </p>
+        <div data-aos="fade-up" data-aos-delay="100" className="mt-16 flex flex-col items-center">
+          <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
+            Quero o Método CEV agora
+          </button>
+        </div>
+
       </div>
     </section>
   );

@@ -34,7 +34,7 @@ export default function HeroSection() {
             <span className="text-white">Você produz </span>
             <span className="gold-gradient">conteúdo</span>
             <span className="text-white"> todo dia </span>
-            <span style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)', color: 'transparent' }}>e não vende nada.</span>
+            <span style={{ color: '#FFFFFF' }}>e não vende nada.</span>
           </h1>
         </div>
 

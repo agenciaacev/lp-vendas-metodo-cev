@@ -65,9 +65,6 @@ export default function PainSection() {
           <button className="btn-gold text-base sm:text-lg px-10 py-5 rounded-xl font-bold tracking-wide uppercase">
             Quero o Método CEV agora
           </button>
-          <p className="mt-4 text-sm" style={{ color: '#777777' }}>
-            ↓ A partir de 12x de R$ 16,42 — acesso imediato
-          </p>
         </div>
 
       </div>

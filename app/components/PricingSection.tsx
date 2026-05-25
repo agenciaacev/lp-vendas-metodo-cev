@@ -3,52 +3,64 @@ const plans = [
     name: 'Essencial',
     price: '16,42',
     installments: '12x de',
-    total: 'R$ 197',
-    highlight: false,
-    features: [
-      { label: 'Acesso aos módulos C e E', active: true },
-      { label: 'Material de apoio', active: true },
-      { label: 'Comunidade exclusiva', active: true },
-      { label: 'Módulo de Vendas (V)', active: false },
-      { label: 'AI CEV integrado', active: false },
-      { label: 'Mentoria em grupo', active: false },
-    ],
-    cta: 'Quero o Essencial',
+    total: 'R$ 197,00',
+    originalPrice: null,
+    discount: null,
+    subtitle: null,
     badge: null,
+    badgeColor: null,
+    features: [
+      'Aulas de conteúdo, estratégia e vendas',
+      'Acesso imediato e direto ao ponto',
+      'Estratégias práticas para vender todos os dias',
+      '25 módulos com aulas direto ao ponto',
+      'Conteúdo, estratégia e vendas na prática',
+      'Acesso imediato após a compra',
+      'Suporte e comunidade de alunos',
+    ],
   },
   {
     name: 'Completo',
-    price: '29,90',
+    price: '41,42',
     installments: '12x de',
-    total: 'R$ 359',
-    highlight: true,
+    total: 'R$ 497,00',
+    originalPrice: 'R$ 997',
+    discount: '-50% OFF',
+    subtitle: null,
+    badge: '🔥 Mais vendido',
+    badgeColor: { background: 'rgba(255,120,0,0.15)', color: '#FF7800', border: '1px solid rgba(255,120,0,0.4)' },
     features: [
-      { label: 'Acesso a todos os módulos CEV', active: true },
-      { label: 'Material de apoio', active: true },
-      { label: 'Comunidade exclusiva', active: true },
-      { label: 'Módulo de Vendas (V)', active: true },
-      { label: 'AI CEV integrado', active: false },
-      { label: 'Mentoria em grupo', active: false },
+      'Todas as aulas + participantes especiais',
+      'Cases de sucesso e conteúdos exclusivos',
+      'Estratégias práticas para vender todos os dias',
+      '27 módulos com aulas direto ao ponto',
+      'Conteúdo, estratégia e vendas na prática',
+      'Acesso imediato após a compra',
+      'Suporte e comunidade de alunos',
+      'Livro digital Método CEV Completo *BONUS*',
     ],
-    cta: 'Quero o Completo',
-    badge: 'Mais escolhido',
   },
   {
     name: 'Completo + AI CEV',
-    price: '49,90',
+    price: '133,08',
     installments: '12x de',
-    total: 'R$ 597',
-    highlight: false,
+    total: 'R$ 1.597,00',
+    originalPrice: null,
+    discount: null,
+    subtitle: 'Agente de Marketing 24h incluso',
+    badge: 'Melhor custo-benefício',
+    badgeColor: { background: 'rgba(0,180,80,0.15)', color: '#00B450', border: '1px solid rgba(0,180,80,0.4)' },
     features: [
-      { label: 'Acesso a todos os módulos CEV', active: true },
-      { label: 'Material de apoio', active: true },
-      { label: 'Comunidade exclusiva', active: true },
-      { label: 'Módulo de Vendas (V)', active: true },
-      { label: 'AI CEV integrado', active: true },
-      { label: 'Mentoria em grupo', active: true },
+      'Tudo do Completo incluso',
+      'Agente de Marketing IA disponível 24h',
+      'Gera prompt, textos e scripts de conteúdo validados',
+      'Templates já validados e autorais',
+      'Cria narrações e áudios em vários formatos',
+      'Gera fotos incríveis',
+      'Cria vídeo de forma automática',
+      'Gera PDFs prontos e profissionais',
+      'Livro digital Método CEV Completo *BONUS*',
     ],
-    cta: 'Quero o Completo + AI',
-    badge: 'Máximo resultado',
   },
 ];
 
@@ -68,13 +80,13 @@ export default function PricingSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 items-start">
+        <div className="grid md:grid-cols-3 gap-6 items-stretch">
           {plans.map((plan, i) => (
             <div
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 100}
-              className="relative rounded-xl overflow-hidden transition-all duration-500 hover:-translate-y-2"
+              className="relative rounded-xl transition-all duration-500 hover:-translate-y-2 flex flex-col"
               style={{
                 background: 'linear-gradient(135deg, #111111, #0f0f0f)',
                 border: '1px solid rgba(214,163,84,0.5)',
@@ -84,42 +96,60 @@ export default function PricingSection() {
               <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg, transparent, #D6A354, transparent)' }} />
 
               {plan.badge && (
-                <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold"
-                  style={{ background: 'rgba(214,163,84,0.15)', color: '#D6A354', border: '1px solid rgba(214,163,84,0.3)' }}>
+                <div
+                  className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold whitespace-nowrap"
+                  style={{
+                    background: '#0d0d0d',
+                    color: plan.badgeColor?.color,
+                    border: plan.badgeColor?.border,
+                  }}>
                   {plan.badge}
                 </div>
               )}
 
-              <div className="p-8">
-                <div className="mb-6">
-                  <div className="text-sm font-semibold mb-3" style={{ color: '#777777' }}>{plan.name}</div>
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-xs" style={{ color: '#B3B3B3' }}>{plan.installments}</span>
-                    <span className="font-bebas text-5xl" style={{ color: '#F1C87A' }}>
-                      R$ {plan.price}
-                    </span>
+              <div className="p-6 flex flex-col flex-1">
+                <div className="mb-4">
+                  <div className="font-bebas text-2xl mb-0.5" style={{ color: '#FFFFFF' }}>{plan.name}</div>
+                  {plan.subtitle && (
+                    <div className="text-xs mb-2" style={{ color: '#777777' }}>{plan.subtitle}</div>
+                  )}
+                  <div className="text-xs font-semibold tracking-widest uppercase mt-2" style={{ color: '#777777' }}>
+                    {plan.installments}
                   </div>
-                  <div className="text-xs" style={{ color: '#777777' }}>ou {plan.total} à vista</div>
+                  <div className="font-bebas text-4xl" style={{ color: '#F1C87A' }}>
+                    R$ {plan.price}
+                  </div>
+                  <div className="flex items-center gap-2 mt-1 flex-wrap">
+                    <span className="text-xs" style={{ color: '#777777' }}>ou à vista {plan.total}</span>
+                    {plan.originalPrice && (
+                      <span className="text-xs line-through" style={{ color: '#555555' }}>{plan.originalPrice}</span>
+                    )}
+                    {plan.discount && (
+                      <span className="text-xs font-bold px-2 py-0.5 rounded-full"
+                        style={{ background: 'rgba(0,180,80,0.15)', color: '#00B450' }}>
+                        {plan.discount}
+                      </span>
+                    )}
+                  </div>
                 </div>
 
-                <ul className="space-y-3 mb-8">
+                <div className="h-px mb-4" style={{ background: '#1F1F1F' }} />
+
+                <ul className="space-y-2 mb-6 flex-1">
                   {plan.features.map((f, j) => (
-                    <li key={j} className="flex items-center gap-3 text-sm">
-                      <span style={{ color: f.active ? '#D6A354' : '#333333' }}>
-                        {f.active ? '✓' : '✕'}
-                      </span>
-                      <span style={{ color: f.active ? '#B3B3B3' : '#333333' }}>{f.label}</span>
+                    <li key={j} className="flex items-start gap-3 text-sm">
+                      <span className="mt-0.5 shrink-0" style={{ color: '#D6A354' }}>•</span>
+                      <span style={{ color: '#B3B3B3' }}>{f}</span>
                     </li>
                   ))}
                 </ul>
 
-                <button
-                  className="btn-gold w-full py-4 rounded-xl text-sm font-bold tracking-wide uppercase transition-all duration-300"
-                >
-                  {plan.cta}
+                <button className="btn-gold w-full py-4 rounded-xl text-sm font-bold tracking-wide transition-all duration-300">
+                  Garantir minha vaga →
                 </button>
               </div>
             </div>
+
           ))}
         </div>
 

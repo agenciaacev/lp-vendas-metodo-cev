@@ -34,7 +34,7 @@ export default function TransformationsSection() {
                 <div className="font-bebas text-6xl gold-text mb-2">7</div>
                 <div className="text-sm" style={{ color: '#B3B3B3' }}>módulos de transformação</div>
               </div>
-              <button className="btn-gold mt-8 px-8 py-4 rounded-xl text-sm font-bold tracking-wide uppercase">
+              <button className="btn-gold mt-6 w-full py-5 rounded-xl text-base font-bold tracking-wide uppercase">
                 Quero começar essa jornada
               </button>
             </div>
@@ -73,19 +73,18 @@ export default function TransformationsSection() {
         </div>
 
         {/* Card e CTA — visíveis apenas no mobile, após a lista */}
-        <div className="lg:hidden mt-8" data-aos="fade-up">
+        <div className="lg:hidden mt-12" data-aos="fade-up">
           <div className="p-6 rounded-xl" style={{ background: '#111111', border: '1px solid #1F1F1F' }}>
             <div className="font-bebas text-6xl gold-text mb-2">7</div>
             <div className="text-sm" style={{ color: '#B3B3B3' }}>módulos de transformação</div>
           </div>
-          <button className="btn-gold mt-6 w-full px-8 py-4 rounded-xl text-sm font-bold tracking-wide uppercase">
+          <button className="btn-gold mt-6 w-full py-5 rounded-xl text-base font-bold tracking-wide uppercase">
             Quero começar essa jornada
           </button>
         </div>
 
       </div>
 
-      <div className="glow-line mt-28" />
     </section>
   );
 }

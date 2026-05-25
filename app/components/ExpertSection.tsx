@@ -76,7 +76,6 @@ export default function ExpertSection() {
         </div>
       </div>
 
-      <div className="glow-line mt-28" />
     </section>
   );
 }
