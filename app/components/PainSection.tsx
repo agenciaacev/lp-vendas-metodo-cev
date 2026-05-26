@@ -1,7 +1,7 @@
 const pains = [
   'Você posta todo dia, segue tendências, usa as hashtags certas... e no fim do mês a conta bancária não reflete nenhum esforço.',
   'Você já investiu em outros cursos de "marketing digital" e saiu com a cabeça cheia de teoria e o bolso igual.',
-  'Seu negócio tem qualidade, tem produto, tem serviço — mas as pessoas que chegam até você não compram.',
+  'Seu negócio tem qualidade, tem produto, tem serviço mas as pessoas que chegam até você não compram.',
   'Você sente que seus concorrentes vendem mais mesmo tendo menos seguidores e menos conteúdo que você.',
   'Você não sabe onde está o erro: no conteúdo? Na oferta? No preço? Na abordagem?',
 ];
@@ -57,7 +57,7 @@ export default function PainSection() {
           <blockquote className="text-xl sm:text-2xl leading-relaxed font-light text-center" style={{ color: '#FFFFFF' }}>
             Conteúdo sem estratégia é <span className="gold-text font-semibold">entretenimento</span>.<br />
             Estratégia sem venda é <span className="gold-text font-semibold">hobby</span>.<br />
-            O CEV une os três — e transforma isso em <span className="gold-text font-semibold">negócio</span>.
+            O CEV une os três e transforma isso em <span className="gold-text font-semibold">negócio</span>.
           </blockquote>
         </div>
 

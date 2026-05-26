@@ -123,7 +123,7 @@ export default function HeroSection() {
             Quero o Método CEV agora
           </a>
           <p className="mt-4 text-sm" style={{ color: '#777777' }}>
-            ↓ A partir de 12x de R$ 16,42 — acesso imediato
+            ↓ A partir de 12x de R$ 16,42 acesso imediato
           </p>
         </div>
 

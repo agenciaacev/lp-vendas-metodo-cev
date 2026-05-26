@@ -23,7 +23,7 @@ export default function Footer() {
             Este produto é comercializado com base nos resultados que o método entrega. Os resultados apresentados são baseados em casos reais de alunos. Resultados individuais podem variar conforme dedicação e contexto de cada pessoa.
           </p>
           <p className="text-xs mt-3" style={{ color: '#333333' }}>
-            © {new Date().getFullYear()} Método CEV — Todos os direitos reservados. Cleane Fontenele.
+            © {new Date().getFullYear()} Método CEV Todos os direitos reservados. Cleane Fontenele.
           </p>
         </div>
 

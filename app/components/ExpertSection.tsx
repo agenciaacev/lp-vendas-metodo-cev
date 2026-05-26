@@ -49,7 +49,7 @@ export default function ExpertSection() {
 
             <div data-aos="fade-up" data-aos-delay="100">
               <p className="text-base leading-relaxed mb-6 text-center lg:text-left" style={{ color: '#B3B3B3' }}>
-                Cleane Fontenele não criou o CEV em uma sala de aula. Ela criou testando, errando, ajustando e vendendo — durante anos, em nichos diferentes, para públicos diferentes, em plataformas diferentes.
+                Cleane Fontenele não criou o CEV em uma sala de aula. Ela criou testando, errando, ajustando e vendendo durante anos, em nichos diferentes, para públicos diferentes, em plataformas diferentes.
               </p>
               <p className="text-base leading-relaxed mb-10 text-center lg:text-left" style={{ color: '#B3B3B3' }}>
                 O resultado são 22 mil publicações, 25 marcas parceiras nacionais, uma agência de marketing, um programa de TV e um método que já transformou negócios em todo o Brasil.

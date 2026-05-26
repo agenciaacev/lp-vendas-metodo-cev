@@ -25,7 +25,7 @@ export default function StickyCTA() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-center sm:text-left">
           <div className="text-sm font-bold text-white">Método CEV</div>
-          <div className="text-xs" style={{ color: '#777777' }}>A partir de 12x de R$ 16,42 — acesso imediato</div>
+          <div className="text-xs" style={{ color: '#777777' }}>A partir de 12x de R$ 16,42 acesso imediato</div>
         </div>
         <a href="#planos" className="btn-gold px-8 py-3 rounded-xl text-sm font-bold tracking-wide uppercase whitespace-nowrap inline-block">
           Quero o Método CEV agora

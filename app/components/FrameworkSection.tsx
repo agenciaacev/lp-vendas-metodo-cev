@@ -2,7 +2,7 @@ const cards = [
   {
     letter: 'C',
     title: 'Conteúdo',
-    desc: 'Você aprende a criar conteúdo com intenção — cada post com um papel específico dentro da jornada do cliente. Fim do conteúdo aleatório que não leva a lugar nenhum.',
+    desc: 'Você aprende a criar conteúdo com intenção cada post com um papel específico dentro da jornada do cliente. Fim do conteúdo aleatório que não leva a lugar nenhum.',
     icon: '✦',
   },
   {

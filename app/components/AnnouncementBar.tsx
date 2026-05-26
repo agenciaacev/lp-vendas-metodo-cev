@@ -9,7 +9,7 @@ export default function AnnouncementBar() {
       className="w-full py-2.5 text-center relative overflow-hidden"
     >
       <p className="text-xs sm:text-sm font-semibold text-black tracking-wide px-4">
-        ⚡ Vagas abertas — A inteligência artificial já está vendendo para seus concorrentes. E para você?
+        ⚡ Vagas abertas A inteligência artificial já está vendendo para seus concorrentes. E para você?
       </p>
     </div>
   );
